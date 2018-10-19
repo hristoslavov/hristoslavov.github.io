@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css"/>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./assets/HS Logo3.png">
+      </div>
+      <nav>
+        <button class="nav-btn" data-navigate-to="home">Home</button>
+        <button class="nav-btn" data-navigate-to="gallery">Gallery</button>
+        <button class="nav-btn" data-navigate-to="about">About me</button>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <section class="home" data-content="home">
+        <div class="carousel"></div>
+      </section>
+      <section class="gallery hidden" data-content="gallery">
+        GALLERY
+      </section>
+      <section class="about hidden" data-content="about">
+        ABOUT
+      </section>
+      <aside>
+        <div>
+          <img src="./assets/Picture.jpg"/>
+        </div>
+        <p>Hristo Andreev Slavov</p>
+        <p>Graphic Designer | Gamer | QA</p>
+        <p><a href="mailto:iceto91@hotmail.com">Iceto91@hotmail.com</a></p>
+        <p>0896 419 777</p>
+        </p>
+        <p>
+            Hello, my name is Hristo! I am 26 years old and I am a certified Graphic Designer. I have hands-on experience with Fine Art, Drawing and Design technologies. I am striving to become a Proficient Graphic Designer with good fundamentals and style. You can browse through projects I've worked on, and you can also see rough estimations of my experience / skill levels.
+        </p>
+      </aside>
+    </main>
+
+    <footer>
+      FOOTER
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script
+      src="./libs/jR3DCarousel.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+  
+    <script src="./scripts/nav.js"></script>
+    <script src="./scripts/gallery.js"></script>
+    <script src="./scripts/carousel.js"></script>
+    </body>
+</html>

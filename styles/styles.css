@@ -17,9 +17,6 @@ section, aside {
   padding: 10px;
 }
 
-header {
-
-}
 
 header > div.logo {
   text-align: center;
@@ -32,6 +29,21 @@ header > div.logo > img {
 header > nav {
   text-align: center;
   margin: 20px;
+}
+
+header > nav > button {
+  background-color: inherit;
+  border: none;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  transition: color .2s ease-in;
+}
+
+header > nav > button:hover, header > nav > button.active {
+  color: orange;
+  cursor: pointer;
 }
 
 main {
@@ -49,11 +61,10 @@ section {
 }
 
 aside {
-  height: 500px;
   width: 400px;
 }
 
-aside p, div {
+aside p, aside div {
   text-align: center;
 }
 
@@ -63,6 +74,10 @@ aside div img {
 
 footer {
   text-align: center;
+}
+
+.home {
+  margin-top: 100px;
 }
 
 .hidden {
@@ -78,10 +93,29 @@ footer {
   text-align: center;
 }
 
-.gallery img {
+.gallery-item img {
   height: 150px;
   width: 200px;
   margin: 10px;
-  border: 1px solid lightgrey;
+  box-shadow: 5px 5px 15px lightgrey;
   border-radius: 100%;
+
+  transition: box-shadow .2s ease-in;
+}
+
+.gallery-item img:hover {
+  box-shadow: 5px 5px 15px darkslategray;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.experience-item, .education-item {
+  border-bottom: 1px solid darkslategray;
+}
+
+.experience-item:last-child, .education-item:last-child {
+  border-color: lightgrey;
 }

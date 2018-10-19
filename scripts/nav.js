@@ -1,7 +1,14 @@
 (function () {
-  $('header > nav > button').each(function () {
+  var $buttons = $('header > nav > button');
+  
+  $buttons.each(function () {
     $(this).on('click', function (e) {
-      var navigateTo = $(e.target).attr('data-navigate-to');
+      var $this = $(e.target);
+      var navigateTo = $this.attr('data-navigate-to');
+
+      $buttons.removeClass('active');
+
+      $this.addClass('active');
 
       $('main > section').each(function () {
         var $target = $(this);

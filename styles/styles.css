@@ -57,7 +57,7 @@ main {
 }
 
 section {
-  width: 800px;
+  width: 1000px;
 }
 
 aside {
@@ -84,19 +84,26 @@ footer {
   display: none;
 }
 
+.gallery-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .gallery-item {
+  align-self: flex-start;
   display: inline-block;
 }
 
 .gallery-item * {
+  margin: 10px;
+  width: 200px;
   display: block;
   text-align: center;
 }
 
 .gallery-item img {
   height: 150px;
-  width: 200px;
-  margin: 10px;
+  overflow: hidden;
   box-shadow: 5px 5px 15px lightgrey;
   border-radius: 100%;
 

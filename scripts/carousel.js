@@ -1,8 +1,9 @@
 (function () {
   var slides = [
-    { src: './assets/Lady with freckles1.png' },
-    { src: './assets/HS Logo1.jpg' },
-    { src: './assets/Mente Kniga centriran text.png' }
+    { src: './assets/RETOUCH AND EFFECTS/Lady with freckles/Lady with freckles Eyeliner.png' },
+    { src: './assets/3D SVG DRAWINGS/Apple/3D Peel - Work in progress.svg' },
+    { src: './assets/ICONS/Camera/Camera without Background.png' },
+    { src: './assets/RETOUCH AND EFFECTS/HDR Effect/HDR + improved sharpness.jpg' },
   ];
 
   $('.carousel').jR3DCarousel({
